@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="Politician" targetNamespace="http://data.politicianinfo.x.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://data.politicianinfo.x.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+    <schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://data.politicianinfo.x.com/" schemaLocation="politician_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="setIdResponse">
+    <wsdl:part name="parameters" element="tns:setIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRegionResponse">
+    <wsdl:part name="parameters" element="tns:getRegionResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setParty">
+    <wsdl:part name="parameters" element="tns:setParty">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getNameResponse">
+    <wsdl:part name="parameters" element="tns:getNameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setSocialMediaUrl">
+    <wsdl:part name="parameters" element="tns:setSocialMediaUrl">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setPartyResponse">
+    <wsdl:part name="parameters" element="tns:setPartyResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setRegion">
+    <wsdl:part name="parameters" element="tns:setRegion">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setNameResponse">
+    <wsdl:part name="parameters" element="tns:setNameResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setSupportScore">
+    <wsdl:part name="parameters" element="tns:setSupportScore">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="toString">
+    <wsdl:part name="parameters" element="tns:toString">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getRegion">
+    <wsdl:part name="parameters" element="tns:getRegion">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setSocialMediaUrlResponse">
+    <wsdl:part name="parameters" element="tns:setSocialMediaUrlResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setRegionResponse">
+    <wsdl:part name="parameters" element="tns:setRegionResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSocialMediaUrl">
+    <wsdl:part name="parameters" element="tns:getSocialMediaUrl">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSupportScore">
+    <wsdl:part name="parameters" element="tns:getSupportScore">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getId">
+    <wsdl:part name="parameters" element="tns:getId">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSupportScoreResponse">
+    <wsdl:part name="parameters" element="tns:getSupportScoreResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getParty">
+    <wsdl:part name="parameters" element="tns:getParty">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getName">
+    <wsdl:part name="parameters" element="tns:getName">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setName">
+    <wsdl:part name="parameters" element="tns:setName">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setSupportScoreResponse">
+    <wsdl:part name="parameters" element="tns:setSupportScoreResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSocialMediaUrlResponse">
+    <wsdl:part name="parameters" element="tns:getSocialMediaUrlResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getIdResponse">
+    <wsdl:part name="parameters" element="tns:getIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getPartyResponse">
+    <wsdl:part name="parameters" element="tns:getPartyResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="toStringResponse">
+    <wsdl:part name="parameters" element="tns:toStringResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="setId">
+    <wsdl:part name="parameters" element="tns:setId">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="PoliticianPortType">
+    <wsdl:operation name="getSocialMediaUrl">
+      <wsdl:input name="getSocialMediaUrl" message="tns:getSocialMediaUrl">
+    </wsdl:input>
+      <wsdl:output name="getSocialMediaUrlResponse" message="tns:getSocialMediaUrlResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSupportScore">
+      <wsdl:input name="getSupportScore" message="tns:getSupportScore">
+    </wsdl:input>
+      <wsdl:output name="getSupportScoreResponse" message="tns:getSupportScoreResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getId">
+      <wsdl:input name="getId" message="tns:getId">
+    </wsdl:input>
+      <wsdl:output name="getIdResponse" message="tns:getIdResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setParty">
+      <wsdl:input name="setParty" message="tns:setParty">
+    </wsdl:input>
+      <wsdl:output name="setPartyResponse" message="tns:setPartyResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setSocialMediaUrl">
+      <wsdl:input name="setSocialMediaUrl" message="tns:setSocialMediaUrl">
+    </wsdl:input>
+      <wsdl:output name="setSocialMediaUrlResponse" message="tns:setSocialMediaUrlResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getParty">
+      <wsdl:input name="getParty" message="tns:getParty">
+    </wsdl:input>
+      <wsdl:output name="getPartyResponse" message="tns:getPartyResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <wsdl:input name="getName" message="tns:getName">
+    </wsdl:input>
+      <wsdl:output name="getNameResponse" message="tns:getNameResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setRegion">
+      <wsdl:input name="setRegion" message="tns:setRegion">
+    </wsdl:input>
+      <wsdl:output name="setRegionResponse" message="tns:setRegionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setName">
+      <wsdl:input name="setName" message="tns:setName">
+    </wsdl:input>
+      <wsdl:output name="setNameResponse" message="tns:setNameResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setSupportScore">
+      <wsdl:input name="setSupportScore" message="tns:setSupportScore">
+    </wsdl:input>
+      <wsdl:output name="setSupportScoreResponse" message="tns:setSupportScoreResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="toString">
+      <wsdl:input name="toString" message="tns:toString">
+    </wsdl:input>
+      <wsdl:output name="toStringResponse" message="tns:toStringResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setId">
+      <wsdl:input name="setId" message="tns:setId">
+    </wsdl:input>
+      <wsdl:output name="setIdResponse" message="tns:setIdResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRegion">
+      <wsdl:input name="getRegion" message="tns:getRegion">
+    </wsdl:input>
+      <wsdl:output name="getRegionResponse" message="tns:getRegionResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="PoliticianSoapBinding" type="tns:PoliticianPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getSocialMediaUrl">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getSocialMediaUrl">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSocialMediaUrlResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSupportScore">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getSupportScore">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSupportScoreResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getId">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getId">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setParty">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setParty">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setPartyResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setSocialMediaUrl">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setSocialMediaUrl">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setSocialMediaUrlResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getParty">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getParty">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPartyResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getName">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getName">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getNameResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setRegion">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setRegion">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setRegionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setName">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setName">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setNameResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setSupportScore">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setSupportScore">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setSupportScoreResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="toString">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="toString">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="toStringResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setId">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="setId">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="setIdResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRegion">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getRegion">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getRegionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Politician">
+    <wsdl:port name="PoliticianPort" binding="tns:PoliticianSoapBinding">
+      <soap:address location="http://localhost:8080/com.x.politicianinfo/services/PoliticianPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

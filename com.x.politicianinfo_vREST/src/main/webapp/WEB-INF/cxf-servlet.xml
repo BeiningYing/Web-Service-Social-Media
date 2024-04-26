@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:jaxws="http://cxf.apache.org/jaxws"
+	xmlns:soap="http://cxf.apache.org/bindings/soap"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd http://cxf.apache.org/bindings/soap http://cxf.apache.org/schemas/configuration/soap.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+	<jaxws:endpoint
+		xmlns:tns="http://data.politicianinfo.x.com/" id="politician"
+		implementor="com.x.politicianinfo.data.Politician"
+		wsdlLocation="wsdl/politician.wsdl" endpointName="tns:PoliticianPort"
+		serviceName="tns:Politician" address="/PoliticianPort">
+		<jaxws:features>
+			<bean class="org.apache.cxf.feature.LoggingFeature" />
+		</jaxws:features>
+	</jaxws:endpoint>
+	<jaxws:endpoint
+		xmlns:tns="http://resource.politicianinfo.x.com/"
+		id="politicianresource"
+		implementor="com.x.politicianinfo.resource.PoliticianResource"
+		wsdlLocation="wsdl/politicianresource.wsdl"
+		endpointName="tns:PoliticianResourcePort"
+		serviceName="tns:PoliticianResourceService"
+		address="/PoliticianResourcePort">
+		<jaxws:features>
+			<bean class="org.apache.cxf.feature.LoggingFeature" />
+		</jaxws:features>
+	</jaxws:endpoint>
+	<jaxws:endpoint
+		xmlns:tns="http://service.politicianinfo.x.com/"
+		id="politicianservice"
+		implementor="com.x.politicianinfo.service.PoliticianService"
+		wsdlLocation="wsdl/politicianservice.wsdl"
+		endpointName="tns:PoliticianServicePort"
+		serviceName="tns:PoliticianServiceService"
+		address="/PoliticianServicePort">
+		<jaxws:features>
+			<bean class="org.apache.cxf.feature.LoggingFeature" />
+		</jaxws:features>
+	</jaxws:endpoint>
+</beans>

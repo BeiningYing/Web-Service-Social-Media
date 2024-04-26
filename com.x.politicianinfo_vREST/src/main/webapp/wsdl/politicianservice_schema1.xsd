@@ -1,0 +1,64 @@
+<xs:schema xmlns:tns="http://service.politicianinfo.x.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://service.politicianinfo.x.com/" version="1.0">
+
+  <xs:element name="addPolitician" type="tns:addPolitician"/>
+
+  <xs:element name="addPoliticianResponse" type="tns:addPoliticianResponse"/>
+
+  <xs:element name="deletePolitician" type="tns:deletePolitician"/>
+
+  <xs:element name="deletePoliticianResponse" type="tns:deletePoliticianResponse"/>
+
+  <xs:element name="getPolitician" type="tns:getPolitician"/>
+
+  <xs:element name="getPoliticianResponse" type="tns:getPoliticianResponse"/>
+
+  <xs:element name="politician" type="tns:politician"/>
+
+  <xs:complexType name="addPolitician">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="arg0" type="tns:politician"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="politician">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="id" type="xs:int"/>
+      <xs:element minOccurs="0" name="name" type="xs:string"/>
+      <xs:element minOccurs="0" name="party" type="xs:string"/>
+      <xs:element minOccurs="0" name="region" type="xs:string"/>
+      <xs:element minOccurs="0" name="socialMediaUrl" type="xs:string"/>
+      <xs:element minOccurs="0" name="supportScore" type="xs:float"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="addPoliticianResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:politician"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getPolitician">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getPoliticianResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:politician"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deletePolitician">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="deletePoliticianResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:boolean"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
