@@ -1,4 +1,4 @@
-package com.x.politicien;
+package com.x.politicianinfo.soap;
 
 import javax.jws.WebService;
 import javax.jws.WebMethod;
@@ -9,9 +9,9 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 @WebService
-public class PoliticianService {
+public class PoliticianSoap {
 
-    private static final Logger LOGGER = Logger.getLogger(PoliticianService.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(PoliticianSoap.class.getName());
 
     private static final Map<Integer, String> politicianMap = new HashMap<Integer, String>();
     private static final Map<Integer, String> politicianPartyMap = new HashMap<Integer, String>(); 
