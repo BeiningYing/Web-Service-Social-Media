@@ -6,7 +6,7 @@
 
 
 ## Introduction
-This project aims to develop a comprehensive system for managing and displaying information about politicians and their affiliated political parties, along with integrating social media interactions. The system comprises two main components: a web service backend and a Java-based client frontend. The web services are implemented using both RESTful and WS-* standards, employing JAX-RS and JAX-WS frameworks respectively. An optional feature includes interfacing with a database for persistent storage of political data. Additionally, the system integrates with external social media services(Twitter/X) to fetch recent posts related to political entities.
+This project aims to develop a comprehensive system for managing and displaying information about politicians and their affiliated political parties, along with integrating social media interactions. The system comprises two main components: a web service backend and a Java-based client frontend. The web services are implemented using both RESTful and WS-* standards, employing JAX-RS and JAX-WS frameworks respectively. Additionally, the system integrates with external social media services(Twitter/X) to fetch recent posts related to political entities.
 
 ## Services Description
 
